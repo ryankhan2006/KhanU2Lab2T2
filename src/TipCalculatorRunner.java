@@ -16,13 +16,31 @@ public class TipCalculatorRunner {
 
         optionOne.addMeal(billAmount);
         billAmount= optionOne.getTotalBillBeforeTip();
-        System.out.println("Total bill amount before tip: " + billAmount);
+        System.out.printf("Total bill amount before tip: $"+"%.2f\n",billAmount);
+
+        double ppcbt= optionOne.perPersonCostBeforeTip();
+        System.out.printf("This is cost per person before tip: $" +"%.2f\n",ppcbt);
 
         tipPercentage= optionOne.getTipPercentage();
-        System.out.println("Tip percentage: " + tipPercentage);
+        System.out.printf("Tip percentage: $"+"%.2f\n", tipPercentage);
 
         double tipAmount= optionOne.tipAmount();
-        System.out.println("Total tip amount: " + tipAmount);
+        System.out.printf("Total tip amount: $"+"%.2f\n", tipAmount);
+
+        double total= optionOne.totalBill();
+        System.out.printf("This is the total bill: $"+"%.2f\n", total);
+
+        double ppta= optionOne.perPersonTipAmount();
+        System.out.printf("Tip per person: $"+"%.2f\n",ppta);
+
+        double pptc= optionOne.perPersonTotalCost();
+        System.out.printf("Total cost per person: $"+"%.2f\n",pptc);
+
+        System.out.println("-----------------");
+
+
+
+
     }
 
 }

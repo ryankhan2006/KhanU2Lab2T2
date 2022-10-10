@@ -14,10 +14,12 @@ public class TipCalculator {
     }
 
     public double getTipPercentage() {
+
         return tipPercentage;
     }
 
     public void addMeal(double cost) {
+
         billAmountBeforeTip= cost+billAmountBeforeTip;
     }
 
